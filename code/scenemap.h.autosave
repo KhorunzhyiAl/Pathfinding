@@ -1,0 +1,42 @@
+#ifndef SCENEMAP_H
+#define SCENEMAP_H
+
+#include <QObject>
+#include <QImage>
+#include <QPoint>
+#include "virtualmap.h"
+
+class SceneMap
+{
+public:
+    SceneMap();
+
+    const QImage* getImage();
+
+public slots:
+    /* Mouse event slots update image and virtual map based on the button pressed and
+     * cursor's position. They do one of the following: 
+     * 1. add wall node
+     * 2. erase wall node
+     * 3. move start/finish node.
+    */
+    void mousePressed(QPoint globalPos, Qt::MouseButton);
+    void mouseMovedWhilePressed(QPoint globalPos);
+    void mouseReleased();
+
+private:
+    VirtualMap vm;
+    QImage *image;
+
+    void Draw(); // draws the whole image
+    void UpdateNode(QPoint pos); // updates one node on the image. pos -- node's coordinates on virtual map (not on the image)
+
+    /*
+     * translates coordinates of global scene (image on QGraphicsView)
+     * to virtual map coordiantes - node position.
+     * if the global coordinates are out of that of the virtual map, returnes (-1; -1)
+    */
+    QPoint mapFromGlobal(QPoint pos);
+};
+
+#endif // SCENEMAP_H
