@@ -390,11 +390,3 @@ void MainWindow::setAndRunMazeAlgorithm(MazeGenerationAlgorithm *newAlgorithm)
 
     ui->pushButtonCreateMaze->setText("Stop Making \nMaze");
 }
-
-
-void MainWindow::on_pushButtonNextStep_clicked()
-{
-    if (algorithm != nullptr) {
-        algorithm->step();
-    }
-}

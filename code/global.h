@@ -14,8 +14,10 @@ enum NODE {
 
 
 #define CELL_SIZE 64
-#define X_NODES 100
-#define Y_NODES 7
+
+
+const int X_NODES = 80;
+const int Y_NODES = 60;
 
 
 namespace Styles {

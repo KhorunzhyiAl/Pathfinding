@@ -68,7 +68,6 @@ private slots:
     void draw();
     void onMazeFinished();
 
-    void on_pushButtonNextStep_clicked();
 
 private:
     Ui::MainWindow *ui;
