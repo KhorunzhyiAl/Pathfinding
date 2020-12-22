@@ -11,7 +11,7 @@ To see how it works, go into /app, and run .exe
 
 # Pics
 
-![Alt text](pics/dijikstra_random.gif)
+![Didn't load :(](pics/dijkstra_random.gif)
 
 ![Alt text](pics/star_maze.gif)
 
