@@ -11,8 +11,10 @@ To see how it works, go into /app, and run .exe
 
 # Pics
 
-![Alt text](https://github.com/KhorunzhyiAl/Pathfinding/blob/main/pics/1.png)
+![Alt text](pics/dijikstra_random.gif)
 
-![Alt text](https://github.com/KhorunzhyiAl/Pathfinding/blob/main/pics/2.png)
+![Alt text](pics/star_maze.gif)
 
-![Alt text](https://github.com/KhorunzhyiAl/Pathfinding/blob/main/pics/3.png)
+![Alt text](pics/star_wall.gif)
+
+![Alt text](pics/dragging.gif)
